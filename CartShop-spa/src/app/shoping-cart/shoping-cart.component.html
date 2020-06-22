@@ -1,0 +1,28 @@
+
+<table class="table">
+    <thead class="thead-dark">
+    
+        <tr>
+            <th scope="col">productName</th> 
+            <th scope="col">Qunatity</th>
+            <th scope="col">Price</th>        
+        </tr>
+        </thead>
+            <tbody>
+                <tr *ngFor="let product of dataProduct ">
+                   
+                    
+                    <td>{{product.productName}}</td>
+                    
+                    <td>{{product.qantity}}</td>
+                    <td>{{product.price}}</td>
+                  
+                </tr>
+            </tbody>
+       
+   
+</table>
+<p>
+    <button  class="btn btn-primary" (click)="savedata()">add</button>
+    
+</p>

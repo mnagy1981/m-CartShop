@@ -1,0 +1,48 @@
+<div class="container mt-4">
+    <div class="row">
+    <div class="col-sm-4">
+        <h1>Edit Product</h1>
+    </div>
+    <div class="col-sm-8"> 
+        <div *ngIf="editform.dirty" class="alert alert-info">
+           <strong>Infromation:</strong>you have made change, any un saved changes will be lost
+        </div>
+    </div>
+  </div>
+    <div class="row">
+      
+           <div class="col-sm-4">
+               <div class="card">
+                   <img class="card-img-top img-thumbnail" src="{{photoUrl ||'../../../../../assets/user.png.png'}}">
+                   
+                   <div class="card-footer">
+                           <button [disabled]="!editform.dirty" class="btn btn-success btn-block" form="editform">Save Changes</button>
+                   </div>
+               </div>
+           </div>
+        <div class="col-sm-8"> 
+           <div class="tab-panel">
+               <tabset class="member-tabset">
+                   <tab heading="Edit Product">
+                     <form #editform="ngForm"(ngSubmit)="updateProduct()" id="editform">
+                     
+                      <h4>Location Details:</h4>
+                      <div class="form-inline">
+                        <label for="productName">ProductName</label>
+                        <input type="text" class="form-control" name="productName"[(ngModel)]="products.productName" >
+                        <label for="price">Price</label>
+                        <input type="text" class="form-control" name="price"[(ngModel)]="products.price" >
+                      </div>
+                     </form>
+                  
+                  </tab>
+                  <tab heading="Edit Photos Product">
+                    <app-edit-photo-product [photoProduct]="products.photosProduct" [ProductID]="productID" (getmemberphotoProductchange)="updateMainPhotoProduct($event)"></app-edit-photo-product>
+                     </tab>
+                    
+               </tabset>
+           </div>
+   
+       </div>
+   </div>
+   </div>

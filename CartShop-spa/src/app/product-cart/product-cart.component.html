@@ -1,0 +1,30 @@
+  
+    <div class="card" *ngIf="Product.productName" style="width: 18rem;">
+        <img class="card-img-top" src={{Product.photoUrl}} >
+        <div class="card-body">
+          <h5 class="card-title">{{Product.productName}}</h5>
+          <h5 class="card-title">{{Product.categoryName}}</h5>
+          <p class="card-text">{{Product.price |currency:'USD':true}}</p>
+        </div>
+        <div class="card-footer">
+          <button 
+          *ngIf="getQunatity()===0; else UpDateQunatity"
+          (click)="Addtable(Product)" class="btn btn-secondary btn-block">Add To Card</button>
+        </div>
+        <ng-template #UpDateQunatity>
+          <div class="row no-gutters">
+            <div class="col-2">
+            <button (click)="Addtable(Product)" class="btn btn-secondary btn-block">+</button>
+            </div>
+            <div class="col text-center">{{getQunatity()}}</div>
+            <div class="col-2">
+              <button (click)="RemoveFromCart(Product)" class="btn btn-secondary btn-block">-</button>
+            </div>
+          </div>
+
+        </ng-template>
+      </div>
+
+
+
+      

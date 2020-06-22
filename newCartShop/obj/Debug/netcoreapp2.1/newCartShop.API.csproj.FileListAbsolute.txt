@@ -1,0 +1,14 @@
+d:\Cart\newCartShop\bin\Debug\netcoreapp2.1\newCartShop.API.deps.json
+d:\Cart\newCartShop\bin\Debug\netcoreapp2.1\newCartShop.API.runtimeconfig.json
+d:\Cart\newCartShop\bin\Debug\netcoreapp2.1\newCartShop.API.runtimeconfig.dev.json
+d:\Cart\newCartShop\bin\Debug\netcoreapp2.1\newCartShop.API.dll
+d:\Cart\newCartShop\bin\Debug\netcoreapp2.1\newCartShop.API.pdb
+d:\Cart\newCartShop\obj\Debug\netcoreapp2.1\newCartShop.API.csprojAssemblyReference.cache
+d:\Cart\newCartShop\obj\Debug\netcoreapp2.1\newCartShop.API.csproj.CoreCompileInputs.cache
+d:\Cart\newCartShop\obj\Debug\netcoreapp2.1\newCartShop.API.RazorAssemblyInfo.cache
+d:\Cart\newCartShop\obj\Debug\netcoreapp2.1\newCartShop.API.RazorAssemblyInfo.cs
+d:\Cart\newCartShop\obj\Debug\netcoreapp2.1\newCartShop.API.AssemblyInfoInputs.cache
+d:\Cart\newCartShop\obj\Debug\netcoreapp2.1\newCartShop.API.AssemblyInfo.cs
+d:\Cart\newCartShop\obj\Debug\netcoreapp2.1\newCartShop.API.RazorTargetAssemblyInfo.cache
+d:\Cart\newCartShop\obj\Debug\netcoreapp2.1\newCartShop.API.dll
+d:\Cart\newCartShop\obj\Debug\netcoreapp2.1\newCartShop.API.pdb
